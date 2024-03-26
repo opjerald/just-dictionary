@@ -49,7 +49,7 @@ const HomePage = async ({ searchParams: { q } }: HomePageProps) => {
     <Container>
       <div className="flex h-full flex-col space-y-4 px-5 md:px-0">
         <Navbar />
-        <Search q={response.q || ""} />
+        <Search q={response.q || "Search"} />
         {!!response.data.length && <Content data={response.data} />}
         {response.error && <NoContent error={response.error} />}
       </div>
@@ -58,3 +58,5 @@ const HomePage = async ({ searchParams: { q } }: HomePageProps) => {
 };
 
 export default HomePage;
+
+

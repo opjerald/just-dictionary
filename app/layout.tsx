@@ -15,6 +15,16 @@ const lora = Lora({
 export const metadata: Metadata = {
   title: "Just Dictionary",
   description: "Dictionary application made by OPJD",
+  icons: [
+    {
+      url: "/svg/dark-icon.svg",
+      media: "(prefers-color-scheme: light)",
+    },
+    {
+      url: "/svg/light-icon.svg",
+      media: "(prefers-color-scheme: dark)",
+    },
+  ],
 };
 
 export default function RootLayout({
